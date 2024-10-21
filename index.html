@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPSC Anthropology Target Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>UPSC Anthropology Target Tracker</h1>
+        <p>Track your progress and stay on top of your preparation!</p>
+    </header>
+
+    <div class="container">
+        <!-- Biological Anthropology Section -->
+        <section>
+            <h2>Biological Anthropology</h2>
+            <ul id="bio-list">
+                <li>Homo sapiens vs. Neanderthals (2024) - <span class="status" id="bio1-status">Pending</span> <button onclick="markComplete('bio1-status')">Mark Complete</button></li>
+                <li>Out of Africa Theory (2022) - <span class="status" id="bio2-status">Pending</span> <button onclick="markComplete('bio2-status')">Mark Complete</button></li>
+            </ul>
+        </section>
+
+        <!-- Cultural Anthropology Section -->
+        <section>
+            <h2>Cultural Anthropology</h2>
+            <ul id="cult-list">
+                <li>Cultural Relativism (2024) - <span class="status" id="cult1-status">Pending</span> <button onclick="markComplete('cult1-status')">Mark Complete</button></li>
+                <li>Franz Boas' Contribution (2023) - <span class="status" id="cult2-status">Pending</span> <button onclick="markComplete('cult2-status')">Mark Complete</button></li>
+            </ul>
+        </section>
+
+        <!-- Add more sections for Linguistic Anthropology and Archaeology -->
+        
+        <!-- Target Form to add new items -->
+        <div class="form-section">
+            <h2>Add New Target</h2>
+            <form id="target-form">
+                <label for="topic">Topic:</label>
+                <input type="text" id="topic" placeholder="e.g., Human Genetics">
+                
+                <label for="section">Select Section:</label>
+                <select id="section">
+                    <option value="bio-list">Biological Anthropology</option>
+                    <option value="cult-list">Cultural Anthropology</option>
+                    <!-- Add more options for Linguistic and Archaeology sections -->
+                </select>
+
+                <button type="button" onclick="addTarget()">Add Target</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
